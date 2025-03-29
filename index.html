@@ -86,6 +86,197 @@
             </div>
         </div>
     </section>
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/280x180" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Short description of the project.</p>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project-card">
+            <img src="https://via.placeholder.com/280x180" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Short description of the project.</p>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project-card">
+            <img src="https://via.placeholder.com/280x180" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>Short description of the project.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+        .projects-section {
+          background: black;
+          color: white;
+          text-align: center;
+          padding: 50px 20px;
+        }
+      
+        .section-title {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+      
+        .projects-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+        }
+      
+        .project-card {
+          background: black;
+          border: 2px solid white;
+          border-radius: 10px;
+          padding: 15px;
+          width: 280px;
+          text-align: left;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          overflow: hidden;
+        }
+      
+        .project-card img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          border-radius: 8px;
+          border-bottom: 2px solid white;
+        }
+      
+        .project-card h3 {
+          margin: 10px 0;
+        }
+      
+        .project-card p {
+          font-size: 0.9rem;
+          opacity: 0.8;
+        }
+      
+        .project-card a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          display: inline-block;
+          margin-top: 10px;
+          border-bottom: 2px solid white;
+          padding-bottom: 2px;
+        }
+      
+        .project-card:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+        }
+      </style>
+      <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/xyzedjae" method="POST">
+          <label>
+            Your Email:
+            <input type="email" name="email" placeholder="Your Email" required>
+          </label>
+          <label>
+            Your Message:
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </label>
+          <button type="submit">Send Message</button>
+        </form>
+      
+        <div class="social-links">
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">GitHub</a>
+          <a href="#" class="social-link">LinkedIn</a>
+        </div>
+      </section>
+      
+      <style>
+        .contact-section {
+          background: black;
+          color: white;
+          text-align: center;
+          padding: 50px 20px;
+          border-top: 2px solid white;
+        }
+      
+        .section-title {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+      
+        .contact-form {
+          max-width: 400px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+      
+        .contact-form label {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      
+        .contact-form input,
+        .contact-form textarea {
+          width: 100%;
+          padding: 12px;
+          background: black;
+          border: 2px solid white;
+          color: white;
+          border-radius: 8px;
+          font-size: 1rem;
+          outline: none;
+          margin-top: 5px;
+        }
+      
+        .contact-form textarea {
+          resize: none;
+        }
+      
+        .contact-form button {
+          background: black;
+          color: white;
+          border: 2px solid white;
+          padding: 12px;
+          font-size: 1rem;
+          cursor: pointer;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+        }
+      
+        .contact-form button:hover {
+          background: white;
+          color: black;
+        }
+      
+        .social-links {
+          margin-top: 20px;
+        }
+      
+        .social-link {
+          color: white;
+          text-decoration: none;
+          font-size: 1rem;
+          margin: 0 10px;
+          border-bottom: 2px solid white;
+          padding-bottom: 2px;
+          transition: color 0.3s ease;
+        }
+      
+        .social-link:hover {
+          color: gray;
+        }
+      </style>
+      
+            
     <script src="script.js"></script>
 </body>
 </html>
