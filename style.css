@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -35,6 +35,10 @@ button{
 
 button:hover{
     border: 2px solid rgb(107, 225, 255);
+}
+
+a{
+  color: rgba(255, 255, 255, 0.719);
 }
 
 /* Navigation Bar */
@@ -207,7 +211,6 @@ h2{
     margin: auto;
     align-items: center;
     background-color: rgb(12, 12, 12);
-    border-bottom: 1px solid white;
 }
 
 .about-text{
@@ -220,4 +223,240 @@ h2{
 li{
     list-style-type: none;
     margin: 10px 0px;
+}
+
+/* projects */
+
+.projects-section {
+    background-color: rgb(12, 12, 12);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 50px 20px;
+    padding: 30px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project-card {
+    background: rgb(20, 20, 20);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+    width: 280px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .project-card h3 {
+    margin: 10px 0;
+    color: white;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: white;
+  }
+
+  .project-card a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+  }
+
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+  }
+
+/* contact */
+
+.contact-section {
+  min-height: 100vh;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    margin-top: 5px;
+  }
+
+  .contact-form textarea {
+    resize: none;
+  }
+
+  .contact-form button {
+    background: black;
+    color: white;
+    border: 2px solid white;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background: white;
+    color: black;
+  }
+
+  .social-links {
+    margin-top: 20px;
+  }
+
+  .social-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+  }
+
+  .social-link:hover {
+    color: gray;
+  }
+
+  .mail-box{
+    padding: 20px 40px 20px 40px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    margin: 40px auto;
+    max-width: 300px;
+}
+
+.mail-box a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Adjust navbar */
+  .nav {
+      flex-direction: column;
+      gap: 15px;
+      font-size: 18px;
+  }
+
+  .nav a {
+      font-size: 20px;
+  }
+
+  /* Adjust home section */
+  .home {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .hero-profile-img {
+      width: 150px;
+      height: 150px;
+  }
+
+  /* Hide bottom icon section in hero */
+  .skills {
+      display: none;
+  }
+
+  /* Responsive about section */
+  .about-text {
+      width: 90%;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .about-text ul {
+      padding: 0;
+  }
+
+  /* Adjust project cards */
+  .projects-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .project-card {
+      width: 90%;
+  }
+
+  /* Contact form adjustments */
+  .contact-form {
+      width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Remove floating icons and borders */
+  .skills-parent {
+      display: none;
+  }
+
+  /* Center the About section text */
+  .about-text {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;  /* Centers it */
+      padding: 10px;
+      border: none;
+  }
 }
